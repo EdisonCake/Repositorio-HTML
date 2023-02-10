@@ -1,0 +1,132 @@
+<html>
+   <head>
+          <title> Trabalhando em HTML5 </title>
+   </head>
+
+   <body>
+     <!-- A tag H1 até H6 define a prioridade do parágrafo/título, sendo H1 a mais "importante/notória" e H6 a menos importante/notória. --->
+
+        <h1>Treinamento Fluig Dev Start</h1>
+        <h4>Autor: Wilson Bizon</h4>
+
+        <!-- A tag HR adiciona uma linha horizontal. -->
+        <hr />
+        <h2>Lista sem ordenação:</h2>
+
+        <!-- A tag UL cria uma lista, porém, não de forma ordenada, mas por exemplo, com ícones como o • e a tag LI adiciona um item à lista. -->
+          <ul>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+               <li>JQuery</li>
+               <li>XML</li>
+               <li>JSON</li>
+          </ul>
+
+          <hr/>
+          <h2>Lista Ordenada com números:</h2>
+
+          <!-- A tag OL cria uma lista, de forma ordenada, como por exemplo 1, 2, 3 ou A, B, C, e novamente, adicionando a tag LI adiciona um item à lista. -->
+          <ol>
+               <li>Assistir as aulas</li>
+               <li>Revisar os vídeos com dúvidas</li>
+               <li>Praticar</li>
+          </ol>
+
+          <hr /> 
+          <h2>Trabalhando com uma imagem:</h2>
+
+          <!-- A tag IMG adiciona uma imagem no texto.
+          Adicionando " src="" permine definir a origen (source) da imagem.
+          Adicionando " alt="" permite dar uma "descrição" à imagem, facilitando a identificalçao dos algoritmos de pesquisa."-->
+          <img src="../img/html5.png" alt="Logotipo HTML5" width="200" height="200" />
+
+          <hr />
+          <h2>Trabalhando com Links Externos:</h2>
+
+          <!-- Usando a tag <A> </A> você adiciona uma referência de um site externo. 
+          Adicionando target="_blank", ao clicar no link, o mesmo é aberto uma nova guia, sem sobrepor a navegação atual. -->
+          <a href="https://architecturesstyle.com/small-minecraft-house/" target="_blank" title="Site de arquitetura do Minecraft">Minecraft Architeture Style</a>
+
+          <hr />
+          <h2>Trabalhando com links internos:</h2>
+
+          <a href="../Novo/Teste02.html" title="Ir para a página 02">Página 02</a>
+
+          <hr />
+          <h2>Agrupadores:</h2>
+
+          <!-- Usando a tag DIV cria uma divisão do conteúdo na janela, permitindo, se usar o CSS3, editar somente essa seção. -->
+          <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" alt="Logotipo HTML5 Menor" width="100"/>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh libero. Etiam ante mauris, egestas sit amet vestibulum vel, gravida non nisl. Curabitur bibendum velit quis sem venenatis, ac ornare massa bibendum. Ut at magna at felis lobortis finibus. Phasellus rhoncus ante tristique metus pharetra porttitor. Praesent suscipit dolor a eros interdum consequat. Sed sagittis eros eu augue elementum, ac gravida metus tincidunt. Fusce euismod sodales orci, id eleifend lectus mollis nec. Cras vel varius lacus. Vivamus facilisis metus sed enim sodales, in bibendum ipsum cursus. Sed congue nec felis sit amet elementum. Curabitur eu turpis ac est auctor tempus. Donec eleifend nulla eu accumsan tincidunt. Integer quis orci in tellus tempus bibendum quis sit amet lacus. Sed eu euismod massa.</p>
+          </div>
+          
+          <hr />
+          <h2>Trabalhando com tabelas</h2>
+
+          <!---Com a tag TABLE iniciamos uma tabela na nossa página.-->
+          <table border="1" cellspacing="5" cellpadding="5">
+
+               <!---A tag THEAD indica cabeçalho de tabela. Dentro de um cabeçalho, não existem tags TDs e sim THs (tableheads)-->
+               <thead style="background-color: rgba(98, 0, 246, 0.601);">
+
+                    <!-- A tag TR adiciona uma linha à tabela. -->
+                    <tr>
+
+                         <!--A tag TD adiciona uma coluna à tabela.-->
+                         <th>Nome</th>
+                         <th>E-mail:</th>
+                         <td style="font-weight: bold;">Observação:</td>
+                    </tr>
+               </thead>
+
+               <!---A tag TBODY indica que esse conteúdo é o corpo da tabela. -->
+               <tbody>
+               <tr>
+                    <td>Edison Cake</td>
+                    <td>edison.antonio@totvs.com.br</td>
+                    <td></td>
+               </tr>
+               </tbody>
+
+               <!---A tag TFOOTER indica que essa área indicada é o rodapé da tabela.-->
+               <tfooter>
+                    <tr>
+                         <!--- Utilizando o 'colspan', você consegue mesclar as linhas, onde entre aspas é o número de linhas a ser mescladas. 
+                         Utilizando o 'rowspan', há a mnescla de colunas nos mesmos critérios. -->
+                         <td colspan="3">Dados para cadastro</td>
+                    </tr>
+               </tfooter>
+
+          </table>
+
+          <hr />
+          <h2>Trabalhando com formulários</h2>
+
+          <!--- A tag FORM inicia um formulário na página. 
+          A caracteristica METHOD indica de que forma será usado o formulário e ACTION que é para onde será direcionado o formulário. -->
+          <form method="" action="" >
+
+               <div>
+               <!-- Utilizar a tag LABEL para semântica.-->
+                    <label for="txt_nome">Nome:</label><br />
+                         <!--A tag INPUT permite a entrada de dados do usuário.
+                         Com ela, pode ser utilizado alguns atriputos como por exemplo, o TEXT.-->
+                         <input type="text" id="txt_nome">
+               </div>
+               <div>
+                    <label for="txt_endereco">Endereço:</label><br />
+                    <input type="text" id="txt_endereco">
+               </div>
+
+               <input type="submit" value="Enviar">
+
+          </form>
+
+   </body>
+
+   <!-- Teste de comentário para alteração de arquivo. -->
+
+</html>
